@@ -123,6 +123,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'blue-carbon-agera-rs',
+    title: 'BLUE CARBON AGERA RS',
+    description: "The shot Koenigsegg reposted to their own Instagram",
+    services: ['PHOTOGRAPHY'],
+    year: '2025',
+    client: '@ccol10',
+    role: 'Photography',
+    about: `One of a handful of Agera RS cars finished in exposed blue carbon, shot on a bluff above the Pacific with the doors up and the engine off. Koenigsegg's own Instagram reposted the lead frame — the closest thing to a review this car needs.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
