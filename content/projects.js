@@ -101,6 +101,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'lamborghini-fenomeno-quail',
+    title: 'LAMBORGHINI FENOMENO — THE QUAIL',
+    description: 'A yellow one-off, from the reveal cloth to the lawn',
+    services: ['PHOTOGRAPHY'],
+    year: '2025',
+    client: 'Lamborghini',
+    role: 'Photography',
+    about: `Twenty-nine of these will ever exist. This one had its cover pulled off in front of a few hundred people at The Quail, then spent the rest of Car Week doing exactly what a car like this is built to do: sit on a lawn in Carmel Valley and make everyone stop talking.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
