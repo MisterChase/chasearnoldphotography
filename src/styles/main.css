@@ -188,6 +188,7 @@ body.has-cursor [role="button"]{ cursor:none; }
   margin-top:clamp(24px,5vh,52px); padding-top:15px;
   border-top:1px solid rgba(255,255,255,.22);
 }
+.hero__title{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
 .hero__caption{
   font-family:var(--font-mono); font-size:10px; letter-spacing:.13em;
   text-transform:uppercase; color:rgba(255,255,255,.72);

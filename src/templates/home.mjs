@@ -78,11 +78,13 @@ ${header(site, { active: 'work' })}
       ${heroVisual}
       <span class="hero__veil" aria-hidden="true"></span>
       <div class="hero__overlay">
-        <h1 class="hero__name">${esc(site.name)}</h1>
         <p class="hero__role">${esc(site.role)}</p>
       </div>
       <div class="hero__foot">
-        ${site.hero?.caption ? `<span class="hero__caption">${esc(site.hero.caption)}</span>` : '<span></span>'}
+        <div class="hero__title">
+          <h1 class="hero__name">${esc(site.name)}</h1>
+          ${site.hero?.caption ? `<span class="hero__caption">${esc(site.hero.caption)}</span>` : ''}
+        </div>
         <a class="hero__cue" href="${u('/#work')}" aria-label="Scroll to work">
           <span>SCROLL</span><span class="hero__cueline"></span>
         </a>

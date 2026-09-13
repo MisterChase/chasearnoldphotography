@@ -68,6 +68,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'hiking-through-mallorca',
+    title: 'HIKING THROUGH MALLORCA',
+    description: 'A coastal trail, a fishing village, and a lot of wind',
+    services: ['PHOTOGRAPHY'],
+    year: '2024',
+    client: 'Personal',
+    role: 'Photography',
+    about: `The Cap de Formentor trail on a day the Mediterranean couldn't decide whether it was calm or furious — glassy in the coves, throwing itself against the headlands everywhere else. Came down into Pollença for the parts that don't fit on a ridge: a red Vespa, a garden path, a boat waiting out the wind.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
