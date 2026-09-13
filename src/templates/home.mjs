@@ -59,7 +59,7 @@ export function renderHome(site, projects, stats, heroMedia) {
     ? '<div class="hero__fallback" aria-hidden="true"></div>'
     : heroMedia.kind === 'video'
       ? video(heroMedia, { inlineLoop: true, className: 'hero__img' })
-      : picture(heroMedia, { sizes: '100vw', alt: '', eager: true, className: 'hero__img' });
+      : picture(heroMedia, { sizes: '100vw', alt: '', eager: true, className: 'hero__img', focalPoint: site.hero?.focalPoint });
   // Alternate into two columns so they can drift at different scroll speeds.
   const colA = withCovers.filter((_, i) => i % 2 === 0);
   const colB = withCovers.filter((_, i) => i % 2 === 1);

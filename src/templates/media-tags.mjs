@@ -16,17 +16,18 @@ export const SIZES = {
   tile:  '(max-width: 860px) 92vw, 44vw',
 };
 
-export function picture(m, { sizes = SIZES.tile, alt = '', eager = false, className = '' } = {}) {
+export function picture(m, { sizes = SIZES.tile, alt = '', eager = false, className = '', focalPoint = '' } = {}) {
   if (!m) return '';
   const jpeg = m.sources.find((s) => s.type === 'image/jpeg');
   const modern = m.sources.filter((s) => s.type !== 'image/jpeg');
+  const style = `background-image:url(${m.lqip})${focalPoint ? `;object-position:${focalPoint}` : ''}`;
   return `<picture class="${className}">
 ${modern.map((s) => `    <source type="${s.type}" srcset="${srcsetFor(s.files)}" sizes="${sizes}">`).join('\n')}
     <img src="${esc(m.src)}" srcset="${srcsetFor(jpeg.files)}" sizes="${sizes}"
          width="${m.width}" height="${m.height}" alt="${esc(alt)}"
          loading="${eager ? 'eager' : 'lazy'}" decoding="${eager ? 'sync' : 'async'}"
          ${eager ? 'fetchpriority="high"' : ''}
-         style="background-image:url(${m.lqip})"
+         style="${style}"
          onload="this.style.backgroundImage='none';this.classList.add('is-loaded')"
          data-full="${esc(m.full)}"${m.fullAvif ? ` data-full-avif="${esc(m.fullAvif)}"` : ''} data-caption="${esc(alt)}">
   </picture>`;

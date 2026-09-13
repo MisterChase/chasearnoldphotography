@@ -21,6 +21,10 @@ export default {
     // How far you scroll before the photo has fully dissolved.
     // 1 = about one screen-height. Higher = slower, more lingering.
     dissolveLength: 0.9,
+    // Where the photo is anchored when object-fit:cover crops it — 'X% Y%'.
+    // Phones only ever see a narrow center strip (crop is width-bound), so
+    // tune X for that; ultrawides only lose top/bottom, so tune Y for those.
+    focalPoint: '50% 45%',
   },
   // 2–3 sentences. Appears in the About panel and in search results.
   bio: `I design and direct visual work across photography, motion and brand systems. Recent work spans editorial photosets, short-form video, and identity design for people building something worth looking at.`,
