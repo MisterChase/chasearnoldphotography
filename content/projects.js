@@ -57,6 +57,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'exploring-spain',
+    title: 'EXPLORING SPAIN',
+    description: "Gaudí's Barcelona, and the mountains above it",
+    services: ['PHOTOGRAPHY'],
+    year: '2024',
+    client: 'Personal',
+    role: 'Photography',
+    about: `Ten days between Sagrada Família's stone and stained glass, Park Güell's tile and shadow, and the jagged peaks of Montserrat an hour outside the city. No two blocks of Barcelona look like they belong to the same architect — which, this being Gaudí's city, is mostly true.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
