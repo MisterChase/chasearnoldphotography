@@ -19,7 +19,7 @@ export const esc = (s = '') =>
 export const splitChars = (text) =>
   [...String(text)].map((ch, i) =>
     ch === ' '
-      ? '<span class="ch ch--space">&nbsp;</span>'
+      ? `<span class="ch ch--space" style="--i:${i}"> </span>`
       : `<span class="ch" style="--i:${i}">${esc(ch)}</span>`
   ).join('');
 
