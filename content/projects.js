@@ -79,6 +79,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'graduation-photos',
+    title: 'GRADUATION PHOTOS',
+    description: 'Five friends, one commencement weekend at FSU',
+    services: ['PHOTOGRAPHY'],
+    year: '2026',
+    client: '—',
+    role: 'Photography',
+    about: `A graduation shoot for five friends finishing at Florida State — half formal portrait against the stadium and the stoles, half the two hours after, when someone opens a bottle of champagne on a brick wall because the walk is finally over.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
