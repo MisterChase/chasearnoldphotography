@@ -112,6 +112,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'nogaro-blue-rs6',
+    title: 'NOGARO BLUE RS6',
+    description: 'A wagon, on air, low on the sand',
+    services: ['PHOTOGRAPHY'],
+    year: '2025',
+    client: '—',
+    role: 'Photography',
+    about: `Audi's own performance division built this as a station wagon, then gave it enough power to embarrass most of what's on the wheel-well decal. On air suspension low enough to leave a belly line in the sand, shot in the twenty minutes before the color left the sky.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
