@@ -134,6 +134,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'stirling-moss',
+    title: 'STIRLING MOSS',
+    description: 'On loan from the Mercedes-Benz Museum, no windshield included',
+    services: ['PHOTOGRAPHY'],
+    year: '2025',
+    client: 'Mercedes-Benz Museum',
+    role: 'Photography',
+    about: `A windshield-less tribute to Sir Stirling Moss's 1955 Mille Miglia win, one of 75 ever built. This example came straight from Mercedes-Benz's own museum in Stuttgart — no visor, no glass, just two headrest fairings and however fast you're willing to go without them.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
