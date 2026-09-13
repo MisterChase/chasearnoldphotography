@@ -90,6 +90,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'engagement-photos',
+    title: 'ENGAGEMENT PHOTOS',
+    description: 'The proposal, and everything just after',
+    services: ['PHOTOGRAPHY'],
+    year: '2026',
+    client: '—',
+    role: 'Photography',
+    about: `One knee on a picnic blanket by the water, then two hours of golden hour before either of them remembered to check the time. Shot as it happened, not staged after the fact — the nerves in the first frame are real.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
