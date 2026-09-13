@@ -445,8 +445,11 @@ body.has-cursor [role="button"]{ cursor:none; }
 }
 .lb.is-open{ opacity:1; }
 .lb[hidden]{ display:none; }
-.lb__stage{ margin:0; display:grid; place-items:center; padding:58px var(--pad) 12px; min-height:0; }
-.lb__stage img{ max-width:100%; max-height:100%; object-fit:contain; }
+.lb__stage{ margin:0; display:grid; place-items:center; padding:58px var(--pad) 12px; min-height:0; overflow:auto; }
+/* max-height:100% has no definite height to resolve against here (place-items:center
+   doesn't stretch the grid item), so it's ignored — pin it to the viewport instead,
+   minus the stage's own padding and the caption bar below it. */
+.lb__stage img{ max-width:100%; max-height:calc(100svh - 120px); object-fit:contain; }
 .lb__close{
   position:absolute; top:16px; right:var(--pad); z-index:2;
   font-family:var(--font-mono); font-size:10px; letter-spacing:.13em; color:var(--dim);
