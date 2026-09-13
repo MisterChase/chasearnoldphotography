@@ -44,7 +44,6 @@ export default {
   socials: [
     { label: 'INSTAGRAM', url: 'https://instagram.com/' },
     { label: 'LINKEDIN',  url: 'https://linkedin.com/in/' },
-    { label: 'VIMEO',     url: 'https://vimeo.com/' },
   ],
   // Optional. Drop a PDF at static/resume.pdf and set this to '/resume.pdf'
   // to surface a RESUME link in the header. Set to null to hide it.

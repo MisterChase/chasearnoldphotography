@@ -113,11 +113,7 @@ export function header(site, { active = 'work', backLink = null } = {}) {
       `<a href="${esc(n.href)}"${n.ext ? ' target="_blank" rel="noopener"' : ''} class="${active === n.key ? 'is-active' : ''}" data-scramble>${esc(n.label)}</a>`
     ).join('<span class="hdr__sep">/</span>')}
   </nav>
-  <div class="hdr__r">
-    <a href="mailto:${esc(site.email)}" data-scramble>${esc(site.email.toUpperCase())}</a>
-    ${site.socials.slice(0, 1).map((s) =>
-      `<a href="${esc(s.url)}" target="_blank" rel="noopener" data-scramble>${esc(s.label)}</a>`).join('')}
-  </div>
+  <div class="hdr__r"></div>
 </header>
 <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label"></span></div>`;
 }
