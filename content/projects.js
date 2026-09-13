@@ -46,6 +46,17 @@ export default [
     featured: true,
   },
   {
+    slug: 'sonderwunsch-nogaro-blue-gt3rs',
+    title: 'SONDERWUNSCH NOGARO BLUE GT3RS',
+    description: 'A one-off 911 shot before the fog burned off',
+    services: ['PHOTOGRAPHY'],
+    year: '2026',
+    client: 'Nish',
+    role: 'Photography',
+    about: `A GT3 RS built through Porsche's Sonderwunsch program, finished in Nogaro Blue — a color that hasn't left the factory since the '80s rally cars. Shot on a dune road at first light, before the fog lifted and the beach houses woke up.`,
+    featured: true,
+  },
+  {
     slug: 'nocturne',                    // ← must match the source-media folder name
     title: 'NOCTURNE',                   // shown in brackets: [ NOCTURNE ]
     description: 'A nightwalk photoset shot on expired film',
