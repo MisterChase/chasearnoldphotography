@@ -106,4 +106,15 @@ export default [
     about: `Hard light, one source, no fill. The studio makes matte glazes that disappear under a softbox, so everything here is lit to bring back an edge.`,
     featured: false,
   },
+  {
+    slug: 'lexus-lfa-passion-project',
+    title: 'LEXUS LFA PASSION PROJECT',
+    description: 'Chasing sunrises with a Japanese V10',
+    services: ['PHOTOGRAPHY'],
+    year: '2026',
+    client: 'Personal',
+    role: 'Photography',
+    about: `Golden hour, palm trees, and a car with a 9,000 RPM redline built by hand in Motomachi. No brief, no client — just a reason to shoot something I'd wanted to point a camera at for years.`,
+    featured: true,
+  },
 ];
