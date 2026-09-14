@@ -19,7 +19,7 @@ function tile(p, i) {
 
   return `
     <a class="tile ${p.featured ? 'tile--featured' : ''}" href="${u(`/work/${esc(p.slug)}/`)}"
-       data-cursor="VIEW" data-reveal style="--aspect:${aspect}">
+       data-cursor="VIEW" data-reveal style="--aspect:${aspect}; order:${i}">
       <span class="tile__idx">${pad(i)}</span>
       <div class="tile__frame">
         ${visual}

@@ -230,8 +230,10 @@ body.has-cursor [role="button"]{ cursor:none; }
 .work__col[data-col="b"]{ padding-top:clamp(50px,13vh,190px); }
 @media (max-width:860px){
   .work__grid{ grid-template-columns:1fr; gap:clamp(40px,7vh,80px); }
-  .work__col{ gap:clamp(40px,7vh,80px); }
-  .work__col[data-col="b"]{ padding-top:0; }
+  /* The two columns exist for the desktop parallax stagger. Below it, drop
+     the wrappers from layout so their tiles fall into one true reading
+     order (each tile's inline `order` is its real project index). */
+  .work__col{ display:contents; }
 }
 
 /* --- tile ----------------------------------------------------------------- */
